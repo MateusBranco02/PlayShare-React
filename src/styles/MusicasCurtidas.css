@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*utilitarios*/
+/* .inline-center {
+    width: 96%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .center--column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .b-blue {
+    background-color: rgba(217, 217, 217, .3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px #007AFF;
+} */
+
+
+/* .left__column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+} */
+
+/* .inline__end {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+} */
+
+/* .center__between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+/*musicasCurtidas*/
+#musicasCurtidas {
+    width: 100%;
+}
+
+#musicasCurtidas .container {
+    margin-left: 8%;
+}
+
+/*sidebar*/
+.sidebar {
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+}
+
+#profile-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+/*sections*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section__header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__content {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 80px);
+    /* Deixa espaço para os botões */
+    overflow: hidden;
+    /* Evita que itens saiam do contêiner */
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.recomendations {
+    width: 250px;
+    height: 250px;
+    background-image: url(../assets/country.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.recomendations__description {
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.recommendations__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* Garante que os itens fora da largura sejam ocultados */
+}
+
+.artist__img {
+    background-image: url(../assets/artist.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.artist__name {
+    color: white;
+    text-align: center;
+}
+
+.playlist__img {
+    position: relative;
+    width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    background-color: #3498db;
+    /* Cor de fundo do círculo */
+    overflow: hidden;
+}
+
+.hole {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    /* Ajuste o tamanho do furo */
+    height: 100px;
+    /* Ajuste o tamanho do furo */
+    border-radius: 50%;
+    background-color: black;
+    /* Cor do fundo que aparece no furo */
+    transform: translate(-50%, -50%);
+}

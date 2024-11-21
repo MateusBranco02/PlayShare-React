@@ -1,0 +1,13 @@
+.header {
+    padding: 20px 25px;
+    width: 100%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.header__content {
+    width: 30vw;
+}
+
+.header__nav {
+    width: 10vw;
+}
