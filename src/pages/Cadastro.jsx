@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import imgCadastroIcon from '../assets/img-cadastro.png';
 import '../styles/Cadastro.css';
 
 export default function Cadastro() {
@@ -110,7 +111,7 @@ export default function Cadastro() {
                             <button
                                 id="back"
                                 type="button"
-                                onClick={() => (window.location.href = "/login")}
+                                onClick={() => (window.location.href = "/")}
                             >
                                 Voltar
                             </button>
@@ -121,7 +122,7 @@ export default function Cadastro() {
                     </form>
                 </div>
                 <div className="inline-end">
-                    <img className="image" src="./assets/img-cadastro.png" alt="" />
+                    <img className="image" src={imgCadastroIcon} alt="" />
                 </div>
             </div>
         </main>
